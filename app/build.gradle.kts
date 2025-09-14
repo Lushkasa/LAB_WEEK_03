@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.example.lab_week_03"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +36,8 @@ android {
 }
 
 dependencies {
-
+//    implementation(libs.androidx.androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidx-navigation" }navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
